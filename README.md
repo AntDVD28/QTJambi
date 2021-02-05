@@ -14,6 +14,16 @@ Los pasos seguidos a groso modo fueron:
 
 2. Transformar la interfaz obtenida a código java, para lo cual haremos uso de la herramienta "juic" desde la línea de comando
 
-3. Crear un proyecto en Netbeans y agregar los archivos java obtenidos. Deberemos también añadir las bibliotecas correspondientes
+    juic -pf frmPrincipal.jui
+    juic -pf ficha.jui
+
+3. Crear un proyecto en Netbeans y agregar los archivos java obtenidos. Deberemos también añadir las bibliotecas correspondientes, incluidas en la descarga.
 
 4. Completar la funcionalidad de la aplicación desde Netbeans.
+
+
+En la carpeta "interfaces" se encuentra las interfaces creadas con QtDesigner. Las interfaces debemos guardarlas con extensión ".jui", en mi caso al no poder ofrecerme esta opción QtDesigner guardé las interfaces como ".ui", posteriormente renombré dicha extensión editando la etiqueta "ui" de los archivos XML generados, adicionando la opción: language= "jambi"
+
+<ui version="4.0" language="jambi">
+  
+ Esto sería conveniente para poder utilizar posteriormente la herramienta "juic", sino no reconocerá los archivos.
